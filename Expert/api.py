@@ -67,7 +67,16 @@ class ExpertOptionAPI:
                 await self.websocket_client.connect(self.server_region)
                 # Send multipleAction requests and fetch assets
                 await self.send_multiple_action()
-                await asyncio.sleep(1.0)  # Add delay to ensure responses are processed
+                # Wait for assets data to arrive with polling
+                max_wait = 10  # Maximum 10 seconds
+                wait_interval = 0.2  # Check every 200ms
+                waited = 0
+                while waited < max_wait:
+                    if self.assets_data and isinstance(self.assets_data, dict):
+                        break
+                    await asyncio.sleep(wait_interval)
+                    waited += wait_interval
+                self.logger.info(f"Waited {waited:.1f}s for assets data")
                 await self.set_trading_mode()
                 await self.fetch_profile()
                 # Process assets data
