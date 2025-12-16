@@ -1,0 +1,56 @@
+📊 الأصول المتاحة الآن (Active Assets)
+==============================================
+
+✅ العملات النشطة (Currencies):
+--------------------------------
+1. ID: 151 | AUD / CAD       | Profit: 10%  | Symbol: AUDCAD
+2. ID: 152 | AUD / JPY       | Profit: 10%  | Symbol: AUDJPY
+3. ID: 154 | EUR / GBP       | Profit: 17%  | Symbol: EURGBP
+4. ID: 158 | USD / CHF       | Profit: 10%  | Symbol: USDCHF
+5. ID: 211 | EUR / AUD       | Profit: 10%  | Symbol: EURAUD
+6. ID: 214 | GBP / CAD       | Profit: 13%  | Symbol: GBPCAD
+7. ID: 216 | GBP / CHF       | Profit: 8%   | Symbol: GBPCHF
+8. ID: 217 | EUR / JPY       | Profit: 10%  | Symbol: EURJPY
+9. ID: 219 | AUD / NZD       | Profit: 10%  | Symbol: AUDNZD
+
+✅ السلع النشطة (Commodities):
+--------------------------------
+1. ID: 221 | Platinum        | Profit: 11%  | Symbol: XPTUSD
+2. ID: 251 | Gold (OTC)      | Profit: 76%  | Symbol: XAUUSD
+3. ID: 267 | Brent Oil (OTC) | Profit: 73%  | Symbol: UKOil_OTC
+4. ID: 268 | Silver (OTC)    | Profit: 72%  | Symbol: SI
+
+✅ المؤشرات النشطة (Indices):
+--------------------------------
+1. ID: 225 | Hong Kong 33    | Profit: 70%  | Symbol: HONGKONG33
+2. ID: 229 | Altcoin Index   | Profit: 64%  | Symbol: altcoinindex
+3. ID: 230 | Top Crypto Index| Profit: 63%  | Symbol: topcryptoindex
+4. ID: 240 | Smarty          | Profit: 83%  | Symbol: SMRTY
+5. ID: 276 | Cricket Index   | Profit: 79%  | Symbol: CRICKET_INDEX_OTC_R
+6. ID: 277 | Camel Race Index| Profit: 77%  | Symbol: CAMEL_RACE_INDEX_OTC_R
+7. ID: 278 | Football Index  | Profit: 77%  | Symbol: FOOTBALL_INDEX_OTC_R
+8. ID: 285 | AI Index        | Profit: 79%  | Symbol: AI_INDEX_OTC_R
+9. ID: 286 | Luxury Index    | Profit: 78%  | Symbol: LUXURY_INDEX_OTC_R
+
+✅ العملات الرقمية النشطة (Cryptocurrencies):
+------------------------------------------------
+1. ID: 462 | BNB / USD       | Profit: 40%  | Symbol: BNBUSD
+2. ID: 463 | DOGE / USD      | Profit: 50%  | Symbol: DOGEUSD
+3. ID: 464 | SOL / USD       | Profit: 53%  | Symbol: SOLUSD
+
+⚠️ ملاحظة هامة:
+================
+البوت يتجنب اختيار الأصول التالية تلقائياً:
+- الأصول OTC (غير مستقرة)
+- المؤشرات (Indices)
+- الأصول ذات الربح 0%
+
+💡 للحصول على أفضل النتائج:
+==============================
+استخدم العملات الرئيسية مثل:
+✓ EUR/GBP (17% ربح)
+✓ GBP/CAD (13% ربح)
+✓ EUR/AUD (10% ربح)
+
+أو السلع مثل:
+✓ Platinum (11% ربح) - الخيار الأفضل للسلع

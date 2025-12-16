@@ -37,7 +37,7 @@ class CandlesChannel(BaseChannel):
         }
         self.logger.debug(f"Sending candles subscription request: {payload}")
         await self.api.websocket_client.send(payload)
-        response = await self.api.websocket_client.recv("candles", timeout=20.0)
+        response = await self.api.websocket_client.recv("candles", timeout=30.0)
         if response.get("action") == "error":
             self.logger.error(f"Received error response: {response}")
             raise ValueError(f"Server error: {response.get('message')}")

@@ -260,7 +260,7 @@ class ExpertOptionAPI:
             self.logger.debug(f"Sending assets payload: {json.dumps(payload, indent=2)}")
             await self.websocket_client.send(payload)
             await asyncio.sleep(0.5)
-            response = await self.websocket_client.recv("assets", timeout=20.0)
+            response = await self.websocket_client.recv("assets", timeout=30.0)
             self.assets_data = response
             # Merge new assets with existing ones
             assets_list = response.get("message", {}).get("assets", [])

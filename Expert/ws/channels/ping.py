@@ -34,7 +34,7 @@ class PingChannel(BaseChannel):
         }
         self.logger.debug(f"Sending ping request: {payload}")
         await api.websocket_client.send(payload)
-        response = await api.websocket_client.recv("ping", timeout=10.0)
+        response = await api.websocket_client.recv("ping", timeout=20.0)
         self.logger.debug(f"Received ping response: {response}")
         return response
     
