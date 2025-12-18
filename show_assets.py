@@ -1,11 +1,16 @@
 import asyncio
+import os
+from dotenv import load_dotenv
 from Expert.api import ExpertOptionAPI
 
 async def show_assets():
     """عرض جميع الأصول المتاحة"""
 
+    # Load environment variables
+    load_dotenv()
+
     # الإعدادات
-    TOKEN = "f4232b804dbd446d5cea0c46e6faeb9c"
+    TOKEN = os.getenv("EXPERT_TOKEN")
     SERVER = "wss://fr24g1us.expertoption.finance/ws/v40"
 
     print("🔄 جاري الاتصال بالسيرفر...")

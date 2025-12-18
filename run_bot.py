@@ -1,8 +1,13 @@
 import asyncio
 import logging
 import time
+import os
+from dotenv import load_dotenv
 from Expert.api import ExpertOptionAPI
 from Expert.indicators import AlligatorIndicator, RSIIndicator
+
+# Load environment variables
+load_dotenv()
 
 # إعداد السجلات بشكل نظيف
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
@@ -11,7 +16,7 @@ logging.getLogger('ExpertOptionAPI').setLevel(logging.INFO)
 
 async def main():
     # ---------------------------------------------------------
-    token = "f4232b804dbd446d5cea0c46e6faeb9c" 
+    token = os.getenv("EXPERT_TOKEN")  # Load from .env file
     # ---------------------------------------------------------
     
     api = ExpertOptionAPI(token=token, demo=True, server_region="wss://fr24g1us.expertoption.finance/ws/v40")

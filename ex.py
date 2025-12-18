@@ -1,14 +1,19 @@
 import asyncio
 import logging
+import os
+from dotenv import load_dotenv
 from Expert.api import ExpertOptionAPI
 from Expert.indicators import AlligatorIndicator, RSIIndicator
+
+# Load environment variables
+load_dotenv()
 
 # Configure logging
 #logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 async def main():
     # Initialize API client
-    token = "6c4bbfd4640b9b46ee145650e331b030"  # Replace with new token if necessary
+    token = os.getenv("EXPERT_TOKEN")  # Load from .env file
     api = ExpertOptionAPI(token=token, demo=True, server_region="wss://fr24g1us.expertoption.finance/ws/v40")
     
     try:
